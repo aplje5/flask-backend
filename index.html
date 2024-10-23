@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business AI Translation Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Translation Service</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="translate">
+      <h2>Interactive Translator</h2>
+      <label for="textInput">Enter text or use your microphone:</label>
+      <textarea id="textInput" placeholder="Type your text here..."></textarea>
+      <button onclick="handleTranslation()">Translate</button>
+      <button onclick="recordSpeech()">Speak</button>
+
+      <div id="result">
+        <h3>Translated Text</h3>
+        <p id="translatedOutput"></p>
+
+        <h3>Suggested Translations</h3>
+        <ul id="suggestionsList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Your Business Name. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
